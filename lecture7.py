@@ -12,12 +12,14 @@
 # x=65
 # print(chr(x))
 
+# **************
 # x=input("Enter Character:")
 # if(ord(x)>=65 and ord(x)<=90):
 #     print("Upper case")
 # else:
 #     print("Not in upper case")
 
+# ***************
 # i=65
 # while(i<=90):
 #     print(chr(i),end=" ")
@@ -34,18 +36,23 @@
 # for i in [3,8,12,34]:
 #     print(i)
 
+# *********
 # for i in "Gwalior":
 #     print(i)
 
+# *********
 # for i in [4,5,6,7,12]:
 #     print(i)
 
+# **********
 # for i in [4,5,6,7,12]:
 #     print(i*10)
 
+# **********
 # for i in ["Gwalior","Bhopal",89,56.7,"Indore"]:
 #     print(i)
 
+# **********
 # for i in "Gwalior":
 #     print(ord(i))
     
@@ -56,33 +63,41 @@
 # for i in range(100,120):
 #     print(i,end=' ')
 
+# ****************
 # for i in range(100,200,10):
 #     print(i,end=' ')
 
+# **************
 # for i in range(200,100):
 #     print(i,end=' ')  # this will not work
 
+# **************
 # for i in range(200,100,-1):
 #     print(i,end=' ')
 
+# ***************
 # for i in range(10):
 #     print(i,end=' ') # by default minimum range is 0
 
+# ***************
 # for i in range(1,5):
 #     for j in range(1,6):
 #         print(j,end=' ')
 #     print()
 
+# ***************
 # for i in range(1,6):
 #     for j in range(1,i+1):
 #         print(j,end=' ')
 #     print()
 
+# **************
 # for i in range(6,1,-1):
 #     for j in range(1,i):
 #         print(j,end=' ')
 #     print()
 
+# ***************
 # for j in range(1,6):
 #     print("x"*j)
 
@@ -93,6 +108,7 @@
 #     print("*"*i)
 #     sps=sps-1
 
+# **********
 # for i in range(6,1,-1):
 #     for j in range(1,i):
 #         print(" ",end='')
@@ -100,6 +116,7 @@
 #         print("*",end='')
 #     print()
 
+# ********************
 for i in range(1,6):
     for j in range(1,i+1):
         print(" ",end='')

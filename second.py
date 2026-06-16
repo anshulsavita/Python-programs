@@ -7,6 +7,10 @@
 # printf(amt)
 
 # *****parsing method
+    # - int(str) --> convert str into int.
+    # - float(str) --> convert str into float
+    # - str(number) --> convert number into str
+
 # rate =float(input("Enter rate:"))
 # qty=float(input("Enter Quantity:"))
 # amt=rate*qty
@@ -18,8 +22,8 @@
 # print(z)
 
 # ****Single if condition--->
-#syntax-->
-# if():
+#syntax--> exp --> expression
+# if(exp):
 #   =====
 #   =====
 # else:
@@ -42,6 +46,7 @@
 
 
 # ******multiple if
+# suntax -->
 # if(exp):
 #     =====
 #     =====
@@ -58,18 +63,24 @@
 #     pf=salary*12/100
 #     hra=salary*7/100
 #     print("Da:",da,"Hra:",hra,"Pf:",pf)
+#     ns=salary+da+hra-pf 
+#     print("Net salary:",ns)
 
 # elif(salary>100000 and salary<=199999):
 #     da=salary*25/100
 #     pf=salary*12/100
 #     hra=salary*5/100
 #     print("Da:",da,"Hra:",hra,"Pf:",pf)
+#     ns=salary+da+hra-pf 
+#     print("Net salary:",ns)
 
 # elif(salary>=50000 and salary<=99999):
 #     da=salary*20/100
 #     pf=salary*12/100
 #     hra=salary*3/100
 #     print("Da:",da,"Hra:",hra,"Pf:",pf)
+#     ns=salary+da+hra-pf 
+#     print("Net salary:",ns)
 
 # else:
 #     print("Invalid salary....")
