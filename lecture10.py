@@ -20,18 +20,19 @@
 # i=x.replace('that','the',1)
 # print(i)
 
-# x="Deepak Tiwari"
-# k=x.endwith('tiwari')
+x="Deepak Tiwari"
+k=x.endswith('Tiwari')
+print(k)
 
 # x=['Gwalior','Bhopal','Jabalpur','jaipur','Indor','Rampur','Ramgarh']
 # for city in x:
 #     if city.endswith('pur'):
 #         print(city)
 
-x="Bhopal,Indore,Jabalpur,Gwalior"
-L=x.split(",")
-print(L)
-print(L[2])
+# x="Bhopal,Indore,Jabalpur,Gwalior"
+# L=x.split(",")
+# print(L)
+# print(L[2])
 
 # x="130,90,72,12-6-2025 5:30"
 # L=x.split(",")

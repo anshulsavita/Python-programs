@@ -37,7 +37,7 @@
 # k="{0:10.2f}\n{1:10.2f}\n{2:10.2f}\n------------\n{3:10.2f}".format(a,b,c,d) #value automatic right justify 
 # print(k)
 
-# 0 represents
+# 0 represents index
 # 10 represents width
 # .2f represents number decimals and float.
 # > represents right justify always after colon(:)
