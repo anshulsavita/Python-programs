@@ -3,11 +3,13 @@
 #     if(i[0].startswith('A')):
 #         print(i)
 
+# *******************
 # s="{}"
 # y="Softech"
 # k=f"{s[0]}{y}{s[1]}"
 # print(k)
 
+# *******************
 # s="the man man the machine the the tyre-MRF"
 # k=s.split(' ')
 # print(k)

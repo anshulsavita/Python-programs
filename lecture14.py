@@ -1,10 +1,11 @@
-# common function of collection
-# len(c) #--> c stands for collections
-# sorted(c,[reverse=True]) --->
-# # sum(c) it is not for us right now
-# max(c) -->
-# min(c) -->
-# all(c) --> koi bhi value null nahi hone chaiye ya fir 0 ya fir blank ya fir none.
+# ******common functions of collection
+# len(c) --> length, c stands for collections
+# sorted(c) ---> arrange in asscending order
+# sorted(c,[reverse=True]) ---> arrange in desscending order
+# sum(c) # it is not for use right now
+# max(c) --> max will print
+# min(c) --> min will print
+# all(c) --> koi bhi value null nahi hone chaiye ya fir 0, blank, none.
 # any(c) --> kam se kam ek value honi chaiye. 
 
 # x=['m','a','n','d','e','e','p']

@@ -2,6 +2,7 @@
 # isspace() --> 
 # isdecimal() --> it is same as digit.
 # isnumeric() --> it is same as digit.
+# "pattern".join(collection) --> join each element of collection with give pattern.
 
 # escape sequence
 # \n      new line
@@ -27,7 +28,7 @@
 # c=20
 # d=a+b+c
 # k="{0},{1},{2},{3},{0},{3}".format(a,b,c,d)  
-# #value of a in 0, b in 1, c in 2 and d in 3. we can use data for multiple times like shown in equation.
+# #value of a in 0, b in 1, c in 2 and d in 3. we can use data for multiple times like shown in example.
 # print(k)
 
 # a=100
@@ -39,18 +40,18 @@
 
 # 0 represents index
 # 10 represents width
-# .2f represents number decimals and float.
+# .2f represents number of decimals and float.
 # > represents right justify always after colon(:)
 # < represents left justify
 # ^ represents mid justify
 
 # ******using conversion specifier**********
-# a=100
-# b=3000
-# c=20
-# d=a+b+c
-# k="%10.2f\n%10.2f\n%10.2f\n---------\n%10.2f"%(a,b,c,d)
-# print(k)
+a=100
+b=3000
+c=20
+d=a+b+c
+k="%10.2f\n%10.2f\n%10.2f\n---------\n%10.2f"%(a,b,c,d)
+print(k)
 
 # - represents left justify in --> 
 # k="%-10.2f\n%-10.2f\n%-10.2f\n---------\n%-10.2f"%(a,b,c,d)
@@ -62,18 +63,18 @@
 # k="it was dark time {0} AM, i had {1:.2f}$ in my pocket".format(time,money)
 # print(k)
 
-# k= "Its was dark time %s, i had %.2f $ in my pocket"%(time,money)
+# k= "Its was dark time %s AM, i had %.2f $ in my pocket"%(time,money)
 # print(k)
 
 # *******or********
-# k=f"It was dark time {time}, i dad {money:.2f}$ in my pocket."
+# k=f"It was dark time {time} AM, i had {money:.2f}$ in my pocket."
 # print(k)
 
 # **************
 # ****join-->
-# "pattern".join(collection) --> add pattern each element of collection
-x=['m','a','n','d','e','e','p']
-k=''.join(x)
-print(k)
-k='@'.join(x)
-print(k)
+# "pattern".join(collection) --> join each element of collection with give pattern.
+# x=['m','a','n','d','e','e','p']
+# k=''.join(x)
+# print(k)
+# k='@'.join(x)
+# print(k)

@@ -18,18 +18,19 @@
 # lstrip([pattern]) --> remove from left side.
 # rstrip([pattern]) --> remove from right side.
 # ljust(width,[pattern]) -->increse width and left justify the string and we get pattern in remaining area(default space).
+# rjust(width,[pattern]) -->increse width and right justify the string and we get pattern in remaining area(default space).
 # center(total space,[pattern]) --> pattern comes in center of total space.
 # isalpha() -->
 # istitle()-->
 # isspace()-->
 # islower()-->
 # isupper()-->
-# isalnum()-->
+# isalnum()--> alphabet or numeric
 # isdigit()-->
 
-# x="Gwalior,Indore,Bhopal,Jabalpur"
-# L=x.rsplit(",",1)
-# print(L)
+x="Gwalior,Indore,Bhopal,Jabalpur"
+L=x.rsplit(",",1)
+print(L)
 
 # x="Vikas Vivek Vinod pankaj mohan"
 # L=x.partition("Vinod")
@@ -81,10 +82,10 @@
 # x="888888"
 # print(x.isdigit())
 
-x="Gwalior7"
-for c in x:
-    if(c.isalpha()):
-        print(c,"is alpha")
-    elif(c.isdigit()):
-        print(c,'is digit')
+# x="Gwalior7"
+# for c in x:
+#     if(c.isalpha()):
+#         print(c,"is alpha")
+#     elif(c.isdigit()):
+#         print(c,'is digit')
 
