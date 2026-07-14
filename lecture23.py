@@ -58,7 +58,7 @@
 # aws study karna hai sir ne bola hai.
 
 # *******methods of dictionary*****
-# get('key','message') --> read data according key. if key does not exist the it return specified message.
+# get('key','message') --> read data according key. if key does not exist then it return specified message.
 
 D={'CS':{'CS100':{'Name':'Ajay','Grade':'A'},'CS101':{'Name':'Anshul','Grade':'B'},'CS102':{'Name':'Vicky','Grade':'C'}},  
   'IT':{'IT100':{'Name':'Alia','Grade':'A'},'It101':{'Name':'Rohit','Grade':'B'},'It102':{'Name':'Ashwini','Grade':'C'}},
