@@ -2,7 +2,7 @@
 # setdefault(key,value) --> this function insert key:value within the dict, if specified key does not exist, but it will not update the key and its value if given key is exist.
 # Values() --> return all the values in list
 # keys()--> return all the keys in list
-# items() --> Return keys and values in tuple.
+# items() --> Return keys and values in list of tuples.
 
 # D={'CS':{'CS100':{'Name':'Ajay','Grade':'A'},'CS101':{'Name':'Anshul','Grade':'B'},'CS102':{'Name':'Vicky','Grade':'C'}},  
 #   'IT':{'IT100':{'Name':'Alia','Grade':'A'},'It101':{'Name':'Rohit','Grade':'B'},'It102':{'Name':'Ashwini','Grade':'C'}},
