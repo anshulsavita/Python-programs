@@ -36,7 +36,7 @@
 
 # *****************
 
-l=[[],[],[]]
+l=[]
 for i in range(3):
         x=input("Enter name:")
         y=int(input("Enter mm:"))

@@ -79,7 +79,7 @@
 # l=[5,6,7,8,9,10,40,30] # shelo copy
 # t=l
 # print(t)
-# t[2]=15000 # when we make change in t, changes will happens in l automaticaly cause they are pointer variable.
+# t[2]=15000 # when we make change in t, changes will happens in l automaticaly cause they are pointer variable and shelo copy.
 # print(l)
 
 # l=[5,6,7,8,9,10,40,30] # deep copy

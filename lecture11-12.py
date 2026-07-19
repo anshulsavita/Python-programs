@@ -17,16 +17,16 @@
 # strip([pattern]) --> remove leading and trailing spaces or any pattern (aage or peeche), default spaces.
 # lstrip([pattern]) --> remove from left side.
 # rstrip([pattern]) --> remove from right side.
-# ljust(width,[pattern]) -->increse width and left justify the string and we get pattern in remaining area(default space).
-# rjust(width,[pattern]) -->increse width and right justify the string and we get pattern in remaining area(default space).
+# ljust(width,[pattern]) --> increse width and left justify the string and we get pattern in remaining area(default space).
+# rjust(width,[pattern]) --> increse width and right justify the string and we get pattern in remaining area(default space).
 # center(total space,[pattern]) --> pattern comes in center of total space.
 # isalpha() -->
-# istitle()-->
-# isspace()-->
-# islower()-->
-# isupper()-->
-# isalnum()--> alphabet or numeric
-# isdigit()-->
+# istitle() -->
+# isspace() -->
+# islower() -->
+# isupper() -->
+# isalnum() --> alphabet or numeric
+# isdigit() -->
 
 # x="Gwalior,Indore,Bhopal,Jabalpur"
 # L=x.rsplit(",",1)

@@ -3,7 +3,7 @@
 # replace(oldstr,new str,[n]) --> replace old str with new str, n is number of replacement.
 # endswith(substr,[si],[ei]) --> return true if string end with specified substring
 # startswith(substr,[si],[ei]) 
-# split(substr,[n]) --> this function split the string into multiple parts according to specified substr and remove that substring. n is number of spli.
+# split(substr,[n]) --> this function split the string into multiple parts according to specified substr and remove that substring. n is number of split.
 
 # x="the man the machine and the python"
 # i=x.rfind('the')
