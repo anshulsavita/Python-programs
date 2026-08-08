@@ -23,7 +23,8 @@
 
 # k=si(5,7,8)
 # print(k)
-# 
+
+# ********************
 # call by values-->
 # def factorial(n):
 #     f=1
@@ -35,6 +36,7 @@
 # k=factorial(4)
 # print(k)
 
+# **********************
 # call by refrence --> Actual args copied their address in formal args.
 # def call(l): # called(formal)
 #     l[2]=l[2]+3000
@@ -43,7 +45,7 @@
 # call(x) # calling(actual)
 # print(x)
 
-# *************
+# ********************
 # def add_tags(tag,text):
 #     t=f"<{tag}>{text}</{tag}>"
 #     return t
@@ -51,6 +53,7 @@
 # k=add_tags('i','softech')
 # print(k)
 
+# ***********************
 def insert_string_middle(text,tag):
     t=f"{tag[:1]}{text}{tag[1:]}"
     return t
