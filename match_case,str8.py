@@ -22,7 +22,7 @@
 
 # ********or******
 
-# i = int(input("Enter Day:"))
+# i = input("Enter Car Name:")
 # match i:
 #     case "Maruti Alto":
 #         print("1450000")

@@ -22,21 +22,22 @@
 
 # ***********************
 
-def call(n):
-    print("Hello:",n)
-    if(n>=1):
-        call(n-1)
-    print("Bye:",n)
+# def call(n):
+#     print("Hello:",n)
+#     if(n>=1):
+#         call(n-1)
+#     print("Bye:",n)
 
-call(5)
-print("End")
+# call(5)
+# print("End")
 
 # **********************
 
-# File_Handling --> use to store data permanently in secondry storaage device.
+# File_Handling --> use to store data permanently in secondry storage device.
 # open("filename","mode")
-# mode
-# w: write (will create new file $ open it into write mode)
+
+# ****mode****
+# w: write (will create new file & open it into write mode)
 # a: append
 # r:read
 # rb:read bytes
@@ -48,3 +49,5 @@ print("End")
 # write(data) --> write data in a file
 
 F=open("Student.db","w");
+F.write("100,harry Singh")
+F.close()
