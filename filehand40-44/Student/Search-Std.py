@@ -1,5 +1,5 @@
 
-F = open(r"C:\Users\Asus\Desktop\Python\filehand40-41\Student\student.db", "r")
+F = open(r"C:\Users\Asus\Desktop\Python\filehand40-44\Student\student.db", "r")
 print("------Main Menu-----")
 print("1.Roll number\n2.Name\n3.Gender\n4. Physics Marks\n5.Chemistry Marks\n6.Maths Marks")
 ch=int(input("Enter How u want to Search:"))

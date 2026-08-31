@@ -1,5 +1,5 @@
 
-F = open(r"C:\Users\Asus\Desktop\Python\filehand40-41\Student\student.db", "r")
+F = open(r"C:\Users\Asus\Desktop\Python\filehand40-44\Student\student.db", "r")
 rn=input("Enter Student Roll Number:")
 while(True):
     data=F.readline()
