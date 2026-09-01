@@ -8,16 +8,16 @@
 
 # ***********************************
 # --> copy only those characters whom startswith 'th' from a file and put is into another file
-f=open('kid.txt','r',encoding='utf-8')
-t=open('kii.txt','w')
-data=f.read()
-l=data.split(' ')
-for i in l:
-    if(i.startswith('th')):
-        t.write(f"{i} ")
-t.close()
-f.close()
-print("Data Transfered...")
+# f=open('kid.txt','r',encoding='utf-8')
+# t=open('kii.txt','w')
+# data=f.read()
+# l=data.split(' ')
+# for i in l:
+#     if(i.startswith('th')):
+#         t.write(f"{i} ")
+# t.close()
+# f.close()
+# print("Data Transfered...")
 
 # ************************************
 # --> count how many t is in a file
@@ -27,3 +27,11 @@ print("Data Transfered...")
 # print(c)
 # f.close()
 
+# csv--> comma seperated values
+# --> Creat a Excel file using filehandling
+F=open("new.csv","w")
+F.write("Employee ID,Employee Name, Age\n")
+for i in range(3):
+    id,name,age=input("Enter id name age:").split(" ")
+    F.write(f"{id},{name},{age}\n")
+F.close()
