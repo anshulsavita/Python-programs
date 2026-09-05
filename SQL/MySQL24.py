@@ -20,20 +20,20 @@ management system -->
     => delete records
     => update the records
 
-database software examples 
+database software examples -->
 - foxpro
 - foxbase (indian)
 - dbase
 --------------------------
 RDBMS --> relational database management system
 ==>  a russian mathmatician scientist MR CODD develop 13 rules of RDBMS.
-==>  jo bhi data ye 13 rules follow karege woh RDBMS hoga.
+==>  the software who can setisfy those rules comes under RDBMS 
 
-RDMS software --
+RDBMS software --
 -> ms sql server
 -> My sql
 -> postgress sql
 -> Oracle
 -> ingress (old), unify (old)
--> mongodb/ firebase --  no sql(remade commands)
+-> mongodb/ firebase --  no sql(ready-made commands)
 '''
