@@ -40,7 +40,7 @@ Syntax(1) -->
         ex => insert into products values(100,'pepsico Ltd','Lays',50,0
         'w:200gms width 6x4','xxxxxxxx','2026/7/7')
 
-Syntax(2) --> if we don't have sequence and all if we want to leave some data.
+Syntax(2) --> if we don't have sequence and also if we want to leave some data.
     insert into <table>(<colname>,<colname>...) value(value1,value2,value3...)
     
         ex => insert into products(companyname,productrate,productid,mfdate,productname) 
