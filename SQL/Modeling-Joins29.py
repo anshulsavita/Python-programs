@@ -1,10 +1,10 @@
 '''
 select 'Hello student' as message
-    - this will print that message
+    - will print message
 --------------------------
 
-Data Modeling -->
--------------
+******Data Modeling -->
+
 product
 -----------------
 product_iD pk, productname,productrate,stock
@@ -31,7 +31,7 @@ Transactionid PK,  productid  FK,   billno FK,   Qtysale
 joins --> use to merge more then one table
 -----------
 
-product table
+product 
 --------
 product_id pk, productname,rate,stock
 1  pepsi  56      10
@@ -39,17 +39,17 @@ product_id pk, productname,rate,stock
 3  Fanta  25   12
 4  Coke 89    10
 
-Sales table
+Sales 
 ---------
 productid   qtysale
 1           5
 4           7
 3           10
 
-now apply joins -->
+now by using joins -->
 
 select product.*,sales.* from products  
-    - this will done matrix multiplication ()
+    - this will done matrix multiplication (Cartision product --> row multiply by column)
     - output -->
         1, pepsi,56,10,1,5
         1,pepsi,56,10,4,7
@@ -58,7 +58,7 @@ select product.*,sales.* from products
         ..........
 
 select product.*,sales.*,product.rate*sales.qtysale as 'Amount' from products,sales where product.productid=sales.productid
-    - This will show those record which are only we have soled and its Amount
-
+    - This will show those record which we have soled and their Amount
+    - this is joins
 
 '''
