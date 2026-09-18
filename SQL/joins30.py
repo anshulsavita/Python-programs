@@ -51,6 +51,7 @@ ProductID PK, ProductName, SupplierID, CategoryID, QuantityPerUnit, UnitPrice, U
     where  products.SupplierID= suppliers.SupplierID and suppliers.CompanyName = 'Specialty Biscuits, Ltd.'
 
 # Question --> category = 'Beverages', print Company names of all suppliers that provide Beverages.
+
     - SELECT suppliers.CompanyName FROM products,suppliers,categories 
     where  products.SupplierID= suppliers.SupplierID and products.CategoryID=categories.CategoryID
     and categories.CategoryName='Beverages'
