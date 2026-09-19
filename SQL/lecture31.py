@@ -1,14 +1,36 @@
-# orders--
-# OrderID, CustomerID, EmployeeID, OrderDate, RequiredDate, ShippedDate, ShipVia,
-# Freight, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry,
-# ProductID, UnitPrice, Quantity, Discount, Total_Amount
+'''
+supplier -->
+SupplierID PK, CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax, HomePage, Products
 
-# select orders.orderid,orders.orderdate,customers.ContactName from products,customers,orders where products.ProductID=orders.ProductID and
-# customers.CustomerID=orders.CustomerID and products.productname='chai'
+category -->
+CategoryID PK, CategoryName, Description
 
-# employeename,customername and city
+products -->
+ProductID PK, ProductName, SupplierID, CategoryID, QuantityPerUnit, UnitPrice, UnitsInStock, UnitsOnOrder, ReorderLevel, Discontinued
 
-# SELECT employees.FirstName,employees.LastName,customers.ContactName,customers.city FROM employees,customers,orders where
-# orders.CustomerID=customers.CustomerID and employees.EmployeeID=orders.EmployeeID and customers.country='France'
+employee -->
+EmployeeID PK, LastName, FirstName, Title, TitleOfCourtesy, BirthDate, HireDate, Address, City, Region, PostalCode, Country, HomePhone, Extension, Photo, Notes, ReportsTo, PhotoPath, FullName, Gender
 
-# select customers.contactname, employees.FirstName, customers.city from customers,employees where employees.city=customers.city
+orders -->
+OrderID PK, CustomerID FK, EmployeeID FK, OrderDate, RequiredDate, ShippedDate, ShipVia,
+Freight, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry,
+ProductID FK, UnitPrice, Quantity, Discount, Total_Amount
+--------------------------------------------------------
+
+Question -- Write a SQL query to find the Order ID, Order Date, Customer Name, and Product Name for all orders where the product name is ‘Chai’.
+    - SELECT orders.OrderID,orders.OrderDate,customers.ContactName,products.productname FROM orders,customers,products
+    where products.ProductID=orders.ProductID and customers.customerid=orders.CustomerID and
+    products.ProductName='Chai'
+
+Question -- Which employees deal with customers from France?
+    - select orders.orderid,employees.FirstName,customers.ContactName,customers.City,customers.country from employees,customers,orders
+    where employees.EmployeeID=orders.EmployeeID and customers.CustomerID=orders.CustomerID and
+    customers.Country='France'
+
+Question --
+SELECT employees.FirstName,employees.LastName,customers.ContactName,customers.city FROM employees,customers,orders where
+orders.CustomerID=customers.CustomerID and employees.EmployeeID=orders.EmployeeID and customers.country='France'
+
+select customers.contactname, employees.FirstName, customers.city from customers,employees where employees.city=customers.city
+
+'''
