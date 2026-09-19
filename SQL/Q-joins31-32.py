@@ -1,15 +1,21 @@
 '''
+Tables -->
+----------------------------------------------------------
 supplier -->
-SupplierID PK, CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax, HomePage, Products
+SupplierID PK, CompanyName, ContactName, ContactTitle, Address, City, Region, 
+PostalCode, Country, Phone, Fax, HomePage, Products
 
 category -->
 CategoryID PK, CategoryName, Description
 
 products -->
-ProductID PK, ProductName, SupplierID, CategoryID, QuantityPerUnit, UnitPrice, UnitsInStock, UnitsOnOrder, ReorderLevel, Discontinued
+ProductID PK, ProductName, SupplierID, CategoryID, QuantityPerUnit, UnitPrice,
+ UnitsInStock, UnitsOnOrder, ReorderLevel, Discontinued
 
-employee -->
-EmployeeID PK, LastName, FirstName, Title, TitleOfCourtesy, BirthDate, HireDate, Address, City, Region, PostalCode, Country, HomePhone, Extension, Photo, Notes, ReportsTo, PhotoPath, FullName, Gender
+employess -->
+EmployeeID PK, LastName, FirstName, Title, TitleOfCourtesy, BirthDate, HireDate,
+ Address, City, Region, PostalCode, Country, HomePhone, Extension, Photo, Notes,
+   ReportsTo, PhotoPath, FullName, Gender
 
 orders -->
 OrderID PK, CustomerID FK, EmployeeID FK, OrderDate, RequiredDate, ShippedDate, ShipVia,
@@ -27,10 +33,13 @@ Question -- Which employees deal with customers from France?
     where employees.EmployeeID=orders.EmployeeID and customers.CustomerID=orders.CustomerID and
     customers.Country='France'
 
-Question --
-SELECT employees.FirstName,employees.LastName,customers.ContactName,customers.city FROM employees,customers,orders where
-orders.CustomerID=customers.CustomerID and employees.EmployeeID=orders.EmployeeID and customers.country='France'
+Question -- Display the customer name and employee name for customers and employees who are from the same city and country.
+    - select employees.FirstName,customers.ContactName,customers.City from employees,customers
+    where employees.city=customers.city 
 
-select customers.contactname, employees.FirstName, customers.city from customers,employees where employees.city=customers.city
+Question -- Find the total amount of sales for the product "Tofu"
+    - select sum(Total_Amount) from products,orders where products.ProductID=orders.ProductID and
+    products.ProductName='Tofu' 
 
+    
 '''
