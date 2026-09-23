@@ -24,20 +24,24 @@ ProductID FK, UnitPrice, Quantity, Discount, Total_Amount
 --------------------------------------------------------
 
 Question -- Write a SQL query to find the Order ID, Order Date, Customer Name, and Product Name for all orders where the product name is ‘Chai’.
+    
     - SELECT orders.OrderID,orders.OrderDate,customers.ContactName,products.productname FROM orders,customers,products
     where products.ProductID=orders.ProductID and customers.customerid=orders.CustomerID and
     products.ProductName='Chai'
 
 Question -- Which employees deal with customers from France?
+    
     - select orders.orderid,employees.FirstName,customers.ContactName,customers.City,customers.country from employees,customers,orders
     where employees.EmployeeID=orders.EmployeeID and customers.CustomerID=orders.CustomerID and
     customers.Country='France'
 
 Question -- Display the customer name and employee name for customers and employees who are from the same city and country.
+    
     - select employees.FirstName,customers.ContactName,customers.City from employees,customers
     where employees.city=customers.city 
 
 Question -- Find the total amount of sales for the product "Tofu"
+    
     - select sum(Total_Amount) from products,orders where products.ProductID=orders.ProductID and
     products.ProductName='Tofu' 
 

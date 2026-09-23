@@ -28,7 +28,7 @@ Transactionid PK,  productid  FK,   billno FK,   Qtysale
 
 ***********************************
 
-joins --> use to merge more then one table
+joins --> JOIN combines rows from two or more tables using a related column. It is used to merge more then one table
 -----------
 
 product 

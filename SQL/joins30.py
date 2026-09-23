@@ -35,7 +35,7 @@ CategoryID PK, CategoryName, Description
 products -->
 ProductID PK, ProductName, SupplierID, CategoryID, QuantityPerUnit, UnitPrice, UnitsInStock, UnitsOnOrder, ReorderLevel, Discontinued
 --------------------------------------------
-# print productname and unitprice who sell Beverages in power_bi schema
+# Question --> print productname and unitprice who sell Beverages in power_bi schema
 
     - SELECT products.productname,products.unitprice FROM products,categories 
     where  products.categoryid=categories.categoryid and categories.CategoryName='Beverages'
