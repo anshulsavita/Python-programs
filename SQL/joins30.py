@@ -20,7 +20,7 @@ to crate a foreign key -->
     - create a table then make all the recuired columns
     - then look at the middle bottom we can see Forsign Keys click on that
     - fill Foreign key Name (we can name it anything)
-    - then fill Referenced Table (for which table we are creating that foreign key in our current case it is pepsiemployees.product)
+    - then fill Referenced Table (for which table we are creating that foreign key, in our current case it is pepsiemployees.product)
     - then fill, from which column we want to link it 
     - then fill foreign key options --> On Delete --> CASCADE
     - CASCADE mean if i will remove anything from master table their all records will be automatically deleted.

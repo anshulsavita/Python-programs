@@ -41,7 +41,7 @@ product_id pk, productname,rate,stock
 
 Sales 
 ---------
-productid   qtysale
+productid fk   qtysale
 1           5
 4           7
 3           10
@@ -57,7 +57,7 @@ select product.*,sales.* from products
         2,Real jiuce, 78,50,1,5....
         ..........
 
-select product.*,sales.*,product.rate*sales.qtysale as 'Amount' from products,sales where product.productid=sales.productid
+select product.*,sales.*,product.rate*,sales.qtysale as 'Amount' from products,sales where product.productid=sales.productid
     - This will show those record which we have soled and their Amount
     - this is joins
 
