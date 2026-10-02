@@ -91,17 +91,5 @@ lpad('str',len,padstr)
             - return H
     
 ltrim(str) --> removes the leading space characters of a string passed as argument.
-    
-
-
-
-
-
-
-
-
-
-
-
 
     '''
