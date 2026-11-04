@@ -1,0 +1,97 @@
+<html>
+    <body><form action="a.html" method="post">
+        <table>
+            <caption> Customer Registration</caption>
+            <tr>
+                <td><b>Customer Id:</b></td>
+                <td><input required type="text" name="cid" id="cid"></td>
+            </tr>
+            <tr>
+                <td><b>Customer Name:</b></td>
+                <td><input title="pls input first name in Alphabets only..." required pattern="[A-Z a-z]+" placeholder="First Name" type="text" name="fn" id="fn"></td>
+                <td><input placeholder="Last Name" type="text" name="ln" id="ln"></td>
+
+            </tr>
+            <tr>
+                <td><b>Birth Date:</b></td>
+                <td>
+                    <input type="date" name="dob" id="dob">
+                    <input type="time" name="bt" id="bt">
+                </td>
+            </tr>
+            <tr>
+                <td><b>Gender:</b></td>
+                <td>
+                    <!-- name is used for grouping mean we only can select one like male or female -->
+                    <input type="radio" name="gen" id="gen" value="Male">Male
+                    <input type="radio" name="gen" id="gen" value="Female">Female
+                </td>
+            </tr>
+            <tr>
+                <td><b>Interest:</b></td>
+                <td>
+                    <!-- checkbox is used for choose multiple options -->
+                    <input type="checkbox" name="int" id="int" value="Electrical">Electrical
+                    <input type="checkbox" name="int" id="int" value="Electronics">Electronics
+                    <input type="checkbox" name="int" id="int" value="Media">Audio/Sound
+                    <input type="checkbox" name="int" id="int" value="Mobile">Mobile
+                
+                </td>
+            </tr>
+            <tr>
+                <td><b>Mobile Number:</b></td>
+                <td><input pattern="[0-9]{10}" title="Pls Enter correct mobile number" type="text" name="mn" id="mn"></td>
+            </tr>
+            <tr>
+                <td><b>Email Id:</b></td>
+                <td><input required type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td><b>Address:</b></td>
+                <td><textarea name="address" id="address" rows="3" cols="20"></textarea></td>
+            </tr>
+
+            <tr>
+                <td><b>State:</b></td>
+                <td>
+                    <select name="states" id="states">
+                        <option>-Select-</option>
+                        <option>Madhya Pradesh</option>
+                        <option value="UP" >Uttar Pradesh</option>
+                        <option>Haryana</option>
+                        <option selected>Punjab</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><b>State:</b></td>
+                <td>
+                    <select size="4" name="states" id="states">
+                        <option>-Select-</option>
+                        <option>Madhya Pradesh</option>
+                        <option value="UP" >Uttar Pradesh</option>
+                        <option>Haryana</option>
+                        <option selected>Punjab</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>Picture:</b></td>
+                <td><input type="file" name="pic" id="pic"></td>
+            </tr>
+
+            <tr>
+                <td><b>Color:</b></td>
+                <td><input type="color" name="cc" id="cc"></td>
+            </tr>
+
+            <tr>
+                <td><b>Password:</b></td>
+                <td><input type="password" name="pwd" id="pwd"></td>
+            </tr>
+        </table>
+        <input type="submit"> <input type="reset">
+    </form>
+    </body>
+</html>

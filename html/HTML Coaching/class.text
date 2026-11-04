@@ -1,0 +1,189 @@
+what is html?
+    - its use to create static web pages(front end)
+    - to create interactive user interface
+
+<head>
+- under the head tag we can use following tags
+- <title>
+- <h1>..<h6>
+
+<hr>
+Horizontal ruler
+    - divider
+ attributes (prperties,props)
+color=anycolor
+align=left/right/middle
+
+<body> </body>
+attributes
+text=anycolor
+change the text color
+
+bgcolor=anycolor
+chanfe the background color
+
+background=any image
+set image in background
+
+containers
+<p></p>
+create paragraph with one space
+
+<div></div>
+create paragraph without spaces
+
+<br>
+for new line
+
+&nbsp;
+return single space
+
+<div>
+<span>
+<p>
+<div> div without space
+<p> with one space
+
+<b> bold
+
+<i> italic
+
+<u> underline
+
+<s> strike thru
+
+<sup></sup> --> superscript
+<sub></sub> --> subscript
+
+<font>
+face=any font name
+size=+n/-name(10)
+color=anycolor
+
+<img>
+use to insert images
+attributes
+------------
+1] width=n/n% 
+2] height=n 
+3] src=amyimage
+4] title=anytext or alt=anytext
+
+<audio>
+<video>
+
+lecture 3 -->
+unordered list
+<ul></ul>
+attributes are 
+type=circle/square/disc
+under the ul tag we can use <li> tag to add items in list
+
+ordered list
+<ol>
+    type=1/i/I/A/a 
+    start=n 
+
+<a>
+anchor tag
+use to create hyperlinks
+attributes
+- href=any link
+- target=self/parent/top/blank --> blank is for open link in new tab and default it is self mean open in same tab
+
+<iframe>
+attributes
+name=any name
+src=url 
+frameborder=1/0
+width=n
+
+<table> tag
+use to arrange the data in rows and columns
+attributes
+- border=0/1
+- width=n/n%
+- bgcolor=any color
+- background=any image
+- cellspacing=n 
+- cellpadding=n 
+
+under the table tag one can use following tags 
+<caption></caption>
+<tr></tr>
+under the <tr> tag
+one can use
+<th> table heading
+<td> table data
+
+lecture 4 --->
+
+<input> tag
+use to design user interface
+------------------------------
+attributes
+- type=text/radio/checkbox/date/time/file/button/reset/submit/
+  email/number/range/hidden/color
+- size=n
+- readonly=true/false
+- disabled=true/false
+- placeholder=anytext
+- title=anytitle
+- id=anyid
+- name=any name
+- pattern=regex(regular expresion)
+- value=any value
+  set the value in text box
+
+<textarea>
+use to input some large text
+attributes
+- rows=n 
+- cols(columns)=n 
+- id=anyid 
+- name=any name
+
+<select> tag
+use to create dropdown/list box
+attributes
+- id=any id
+- name=any name
+- size=n [list box]
+- multiselect [list box]
+under the select tag we can use <option> tag to add items in list/dd 
+attributes
+--------
+value=anyvalue
+selected 
+
+lecture 5 --->
+<form></form>
+bind the data in single unit
+attributes
+- action= any_url
+ will move the control to specified URL when user click on submit button
+
+- method=get/post/put/patch/delete
+
+get 
+will show the input information on address bar 
+
+post
+will not show the information on address bar
+
+validations
+----------
+regex(regular expression)
+required
+[A-Z] will allow only one character in uppercase
+[A-Z a-z] 
+ will allow only one character in uppercase/lowecase/space
+[A-Z a-z] +
+ will allow n character in uppercase/lowecase/space
+[A-Z a-z]{20}
+allow fixed 20 characters
+[0-9A-Za-z]{16}
+[A-Z a-z]{5,20} min 5 max 20
+[A-Z a-z]{5,} min 5 max n
+[A-Z a-z]{,20} min 0 max 20
+[0-9]{10}
