@@ -47,3 +47,11 @@ import streamlit as st
 file=st.file_uploader("select Video File",type=["mp4","mpeg"])
 if(file):
     st.video(file.getvalue())
+
+# or
+
+st.title("Upload and Play Video")
+video_file=st.file_uploader("Chose a video",type=["mp4","mov","avi","mkv"])
+if video_file is not None:
+    st.success("Video uploaded successfully!")
+    st.video(video_file)
