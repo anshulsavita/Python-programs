@@ -9,3 +9,13 @@ def getAllData(query):
     smt.execute(query)
     records=smt.fetchall()
     return(records)
+
+def saveRecord(query):
+    try:
+        db,smt=DB_Connect()
+        smt.execute(query)
+        db.commit()
+        db.close()
+        return({'status':True,'msg':'Record Submitted'})
+    except Exception as e:
+        return({'status':False,'msg':e})
