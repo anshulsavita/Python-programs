@@ -1,6 +1,6 @@
 # Lecture 53***
 import streamlit as st
-import database as DB # this is a module made by user
+import database1 as DB # this is a module made by user
 
 # formate function bolta hai ki tume kya dikhana hai options me se, option me hamare pass multiple dict ki lists hai
 # on_change on line 20 is called as event
